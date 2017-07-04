@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body style="padding: 100px">
+
+<form action="/details" method="POST">
+	<input type="submit" style="margin: 5px; padding: 4px" value="Показать каталог">
+</form>
+	
+<form  action="/" method="POST">
+	<h1>Добавление новой детали</h1>
+
+	<p style="color: red"><%=@error%></p>
+<input style="margin: 5px; width: 300px" placeholder="Название детали" type="text" name='spares[name]' ><br>
+<input style="margin: 5px; width: 300px" placeholder="Цена детали" type="text" name='spares[price]' ><br>
+<input style="margin: 5px; width: 300px" placeholder="Ссылка на картинку" type="text" name='spares[link]' ><br>
+<textarea style="margin: 5px" placeholder="Описание" rows="10" cols="45" name='spares[description]' ></textarea><br>
+<input style="margin: 5px; padding: 4px" type="submit" value="Добавить">
+
+</form>
+
+
+
+</body>
+</html>
